@@ -1,22 +1,17 @@
 int	<KW,1>
 a	<IDN,a>
-=	<OP,14>
-3	<INT,3>
-;	<SE,24>
-int	<KW,1>
-b	<IDN,b>
-=	<OP,14>
-5	<INT,5>
 ;	<SE,24>
 void	<KW,2>
 func	<IDN,func>
 (	<SE,20>
 )	<SE,21>
 {	<SE,22>
-return	<KW,3>
 a	<IDN,a>
-+	<OP,6>
-b	<IDN,b>
+=	<OP,11>
+10	<INT,10>
+;	<SE,24>
+return	<KW,3>
+0	<INT,0>
 ;	<SE,24>
 }	<SE,23>
 
@@ -30,90 +25,71 @@ b	<IDN,b>
 6	int#int	move
 7	varDef#Ident	reduction
 8	Ident#Ident	move
-9	argVarDef#=	reduction
-10	=#=	move
-11	initVal#INT	reduction
-12	exp#INT	reduction
-13	assignExp#INT	reduction
-14	eqExp#INT	reduction
-15	relExp#INT	reduction
-16	addExp#INT	reduction
-17	mulExp#INT	reduction
-18	unaryExp#INT	reduction
-19	primaryExp#INT	reduction
-20	number#INT	reduction
-21	INT#INT	move
-22	mulExpAtom#;	reduction
-23	addExpAtom#;	reduction
-24	relExpAtom#;	reduction
-25	eqExpAtom#;	reduction
-26	assignExpAtom#;	reduction
-27	argVarDecl#;	reduction
-28	;#;	move
-29	compUnit#int	reduction
-30	decl#int	reduction
-31	varDecl#int	reduction
-32	bType#int	reduction
-33	int#int	move
-34	varDef#Ident	reduction
-35	Ident#Ident	move
-36	argVarDef#=	reduction
-37	=#=	move
-38	initVal#INT	reduction
-39	exp#INT	reduction
-40	assignExp#INT	reduction
-41	eqExp#INT	reduction
-42	relExp#INT	reduction
-43	addExp#INT	reduction
-44	mulExp#INT	reduction
-45	unaryExp#INT	reduction
-46	primaryExp#INT	reduction
-47	number#INT	reduction
-48	INT#INT	move
-49	mulExpAtom#;	reduction
-50	addExpAtom#;	reduction
-51	relExpAtom#;	reduction
-52	eqExpAtom#;	reduction
-53	assignExpAtom#;	reduction
-54	argVarDecl#;	reduction
-55	;#;	move
-56	compUnit#void	reduction
-57	funcDef#void	reduction
-58	funcType#void	reduction
-59	void#void	move
-60	Ident#Ident	move
-61	(#(	move
-62	funcFParams#)	reduction
-63	)#)	move
-64	block#{	reduction
-65	{#{	move
-66	blockItem#return	reduction
-67	stmt#return	reduction
-68	return#return	move
-69	argExp#Ident	reduction
-70	exp#Ident	reduction
-71	assignExp#Ident	reduction
-72	eqExp#Ident	reduction
-73	relExp#Ident	reduction
-74	addExp#Ident	reduction
-75	mulExp#Ident	reduction
-76	unaryExp#Ident	reduction
-77	Ident#Ident	move
-78	callFunc#+	reduction
-79	mulExpAtom#+	reduction
-80	addExpAtom#+	reduction
-81	+#+	move
-82	mulExp#Ident	reduction
-83	unaryExp#Ident	reduction
-84	Ident#Ident	move
-85	callFunc#;	reduction
-86	mulExpAtom#;	reduction
-87	addExpAtom#;	reduction
-88	relExpAtom#;	reduction
-89	eqExpAtom#;	reduction
-90	assignExpAtom#;	reduction
-91	;#;	move
-92	blockItem#}	reduction
-93	}#}	move
-94	compUnit##	reduction
-95	EOF#EOF	accept
+9	argVarDef#;	reduction
+10	argVarDecl#;	reduction
+11	;#;	move
+12	compUnit#void	reduction
+13	funcDef#void	reduction
+14	funcType#void	reduction
+15	void#void	move
+16	Ident#Ident	move
+17	(#(	move
+18	funcFParams#)	reduction
+19	)#)	move
+20	block#{	reduction
+21	{#{	move
+22	blockItem#Ident	reduction
+23	stmt#Ident	reduction
+24	exp#Ident	reduction
+25	assignExp#Ident	reduction
+26	eqExp#Ident	reduction
+27	relExp#Ident	reduction
+28	addExp#Ident	reduction
+29	mulExp#Ident	reduction
+30	unaryExp#Ident	reduction
+31	Ident#Ident	move
+32	callFunc#=	reduction
+33	mulExpAtom#=	reduction
+34	addExpAtom#=	reduction
+35	relExpAtom#=	reduction
+36	eqExpAtom#=	reduction
+37	assignExpAtom#=	reduction
+38	=#=	move
+39	eqExp#INT	reduction
+40	relExp#INT	reduction
+41	addExp#INT	reduction
+42	mulExp#INT	reduction
+43	unaryExp#INT	reduction
+44	primaryExp#INT	reduction
+45	number#INT	reduction
+46	INT#INT	move
+47	mulExpAtom#;	reduction
+48	addExpAtom#;	reduction
+49	relExpAtom#;	reduction
+50	eqExpAtom#;	reduction
+51	assignExpAtom#;	reduction
+52	;#;	move
+53	blockItem#return	reduction
+54	stmt#return	reduction
+55	return#return	move
+56	argExp#INT	reduction
+57	exp#INT	reduction
+58	assignExp#INT	reduction
+59	eqExp#INT	reduction
+60	relExp#INT	reduction
+61	addExp#INT	reduction
+62	mulExp#INT	reduction
+63	unaryExp#INT	reduction
+64	primaryExp#INT	reduction
+65	number#INT	reduction
+66	INT#INT	move
+67	mulExpAtom#;	reduction
+68	addExpAtom#;	reduction
+69	relExpAtom#;	reduction
+70	eqExpAtom#;	reduction
+71	assignExpAtom#;	reduction
+72	;#;	move
+73	blockItem#}	reduction
+74	}#}	move
+75	compUnit##	reduction
+76	EOF#EOF	accept

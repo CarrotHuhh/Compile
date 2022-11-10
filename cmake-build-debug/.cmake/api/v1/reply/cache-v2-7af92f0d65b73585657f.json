@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "Debug"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/huyiquan/CLionProjects/Compiler/cmake-build-default"
+			"value" : "/Users/huyiquan/CLionProjects/Compiler/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -795,7 +795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "compiler"
+			"value" : "Compiler"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1078,7 +1078,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "compiler_BINARY_DIR",
+			"name" : "Compiler_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1087,10 +1087,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/huyiquan/CLionProjects/Compiler/cmake-build-default"
+			"value" : "/Users/huyiquan/CLionProjects/Compiler/cmake-build-debug"
 		},
 		{
-			"name" : "compiler_IS_TOP_LEVEL",
+			"name" : "Compiler_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1102,7 +1102,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "compiler_SOURCE_DIR",
+			"name" : "Compiler_SOURCE_DIR",
 			"properties" : 
 			[
 				{
