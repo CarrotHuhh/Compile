@@ -1,0 +1,4 @@
+/Users/huyiquan/CLionProjects/Compiler/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/Users/huyiquan/CLionProjects/Compiler/cmake-build-default/CMakeFiles/edit_cache.dir
+/Users/huyiquan/CLionProjects/Compiler/cmake-build-default/CMakeFiles/test.dir
+/Users/huyiquan/CLionProjects/Compiler/cmake-build-default/CMakeFiles/compiler.dir
